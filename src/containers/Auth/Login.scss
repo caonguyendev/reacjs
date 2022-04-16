@@ -1,0 +1,92 @@
+.login-background {
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-container {
+    width: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    .login-content {
+      padding: 20px;
+      label {
+        display: inline-block;
+        margin-bottom: 2px;
+      }
+      .text-login {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+      }
+      .forgot-password {
+        font-size: 12px;
+      }
+      .btn-login {
+        width: 100%;
+        font-size: 20px;
+        padding: 5px 0;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 187, 45, 1) 100%
+        );
+        transition: opacity 0.15s ease;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .signin-with {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .input-password {
+        position: relative;
+        i {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .social-login {
+        display: flex;
+        justify-content: center;
+        i {
+          font-size: 32px;
+          margin-right: 15px;
+          cursor: pointer;
+          transition: color 0.15s linear;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          &:nth-child(1) {
+            background: #db4437;
+          }
+          &:nth-child(2) {
+            background: #3b5998;
+          }
+          &:nth-child(3) {
+            background: #00acee;
+          }
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
