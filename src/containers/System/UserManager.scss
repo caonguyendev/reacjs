@@ -1,3 +1,8 @@
+body {
+  min-height: auto;
+  overflow-y: scroll;
+}
+
 .user-table {
   padding: 0 5px;
 }
@@ -8,22 +13,17 @@
   outline: none;
   background-color: transparent;
   font-size: 20px;
-  &:hover {
-    background-color: transparent !important;
-  }
 }
 .btn-edit {
   color: orange;
   &:hover {
     opacity: 0.4;
-    color: orange !important;
   }
 }
 .btn-delete {
   color: rgb(243, 26, 26);
   &:hover {
     opacity: 0.4;
-    color: rgb(243, 26, 26) !important;
   }
 }
 
@@ -53,4 +53,35 @@
   text-align: left;
   background-color: #04aa6d;
   color: white;
+}
+
+.model-user-container {
+  .modal-header {
+    button.close {
+      background-color: transparent;
+      border: none;
+      font-size: 26px;
+      color: white;
+    }
+  }
+  .modal-user-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      &.max-w {
+        width: 100%;
+      }
+      input {
+        border-radius: 3px;
+        height: 30px;
+        outline: none;
+        border: 1px solid gray;
+        padding-left: 10px;
+      }
+    }
+  }
 }
