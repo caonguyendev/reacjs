@@ -1,0 +1,50 @@
+.home-footer {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+  i {
+    font-size: 15px;
+  }
+  a.logo {
+    display: inline-block;
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  h5 {
+    font-weight: 500;
+  }
+  .footer-row {
+    display: flex;
+    align-items: baseline;
+    .footer-col1 {
+      width: 45%;
+      line-height: 1.6;
+      h5 {
+        margin-top: 10px;
+      }
+      a.bocongthuong {
+        display: inline-block;
+        margin-top: 15px;
+        width: 30%;
+      }
+    }
+    .footer-col2 {
+      flex: 1;
+      padding-left: 50px;
+      .list {
+        a {
+          display: block;
+          color: #45c3d2;
+          cursor: pointer;
+          line-height: 1.8;
+        }
+      }
+    }
+    .footer-col3 {
+      padding-left: 15px;
+      width: 30%;
+    }
+  }
+}

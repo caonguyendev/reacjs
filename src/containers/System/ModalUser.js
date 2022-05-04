@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
 import { Modal, ModalBody, ModalHeader, ModalFooter, Button } from "reactstrap";
+import { emitter } from "../../utils/emitter";
 
 class ModalUser extends Component {
   constructor(props) {
@@ -12,6 +13,20 @@ class ModalUser extends Component {
       lastName: "",
       address: "",
     };
+    this.listenToEmitter();
+  }
+
+  listenToEmitter() {
+    emitter.on("EVENT_CLEAR_MODAL_DATA", () => {
+      // reset state
+      this.setState({
+        email: "",
+        password: "",
+        firstName: "",
+        lastName: "",
+        address: "",
+      });
+    });
   }
 
   componentDidMount() {}

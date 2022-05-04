@@ -1,0 +1,200 @@
+.home-header-container {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  .home-header-content {
+    height: 100%;
+    display: flex;
+    padding: 10px 0;
+    .left-content {
+      flex-basis: 25%;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 24px;
+      }
+      .header-logo {
+        cursor: pointer;
+        height: 60%;
+        width: 58%;
+        margin-left: 10px;
+        background: url("../../assets/images/logo.svg") left center no-repeat;
+      }
+    }
+    .center-content {
+      flex-basis: 60%;
+      .list {
+        display: flex;
+        gap: 15px;
+        height: 100%;
+        .item {
+          .title {
+            color: #333;
+            text-align: left;
+            font-size: 12px;
+            text-transform: initial;
+          }
+          .desc {
+            color: #8d8d8d;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .right-content {
+      flex-basis: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      .language-vi {
+        cursor: pointer;
+        opacity: 0.15;
+        transition: all 0.15s ease;
+        &.active,
+        &:hover {
+          opacity: 1;
+          color: orange;
+        }
+      }
+      .language-en {
+        opacity: 0.15;
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 4px;
+        transition: all 0.15s ease;
+        &.active,
+        &:hover {
+          opacity: 1;
+          color: blue;
+        }
+      }
+      .support {
+        margin-right: 30px;
+        cursor: pointer;
+        .support-link {
+          display: flex;
+          align-items: center;
+          color: #969495;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 12px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #45c3d2;
+          color: #fff;
+        }
+        .text {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.home-header-banner {
+  padding-top: 80px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1)),
+    url("../../assets/images/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .banner-top {
+    width: 60%;
+    text-align: center;
+    margin-top: 40px;
+    .title1,
+    .title2 {
+      font-size: 32px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #333;
+    }
+    .title2 {
+      font-weight: bold;
+    }
+    .input-search {
+      padding: 10px 22px;
+      margin: 20px auto 0;
+      width: 60%;
+      background-color: #f7d800;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      i {
+        margin-right: 10px;
+      }
+      input {
+        flex: 1;
+        color: #000;
+        outline: none;
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+  .banner-bottom-list.container {
+    max-width: 1280px !important;
+  }
+  .banner-bottom {
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 35px;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 1)
+    );
+    color: rgb(73, 73, 73);
+    padding-top: 20px;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      text-align: center;
+      height: 100px;
+      min-width: 150px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    &-item:hover {
+      .banner-bottom-text {
+        color: #45c3d2;
+      }
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: auto;
+      color: #45c3d2;
+      i {
+        font-size: 26px;
+      }
+    }
+    &-text {
+      padding-top: 5px;
+      margin: auto;
+      width: 80%;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: color 0.15s linear;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.section-about {
+  .container {
+    .section-content {
+      display: flex !important;
+      iframe {
+        width: 50%;
+      }
+      p {
+        width: 50%;
+        padding: 5px 20px;
+      }
+    }
+  }
+}

@@ -41,8 +41,7 @@ class Login extends Component {
           errMessage: data.message,
         });
       } else {
-        console.log("OK");
-        this.props.userLoginSuccess(data.user);
+        this.props.userLoginSuccess(data.user.user);
       }
     } catch (error) {
       if (error?.response?.data) {
@@ -57,6 +56,13 @@ class Login extends Component {
     let { isPasswordHidden } = this.state;
     this.setState({ isPasswordHidden: !isPasswordHidden });
   }
+
+  handleOnKeyDown = (event) => {
+    // Enter key
+    if (event.keyCode === 13) {
+      this.handleLogin();
+    }
+  };
 
   render() {
     let { username, password, isPasswordHidden } = this.state;
@@ -84,6 +90,7 @@ class Login extends Component {
                   placeholder="Enter your password"
                   value={password}
                   onChange={(event) => this.handleOnChangePassword(event)}
+                  onKeyDown={(event) => this.handleOnKeyDown(event)}
                 />
                 <span
                   className="eye-toggle"

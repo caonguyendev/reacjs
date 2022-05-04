@@ -1,6 +1,9 @@
 body {
   min-height: auto;
-  overflow-y: scroll;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
 }
 
 .user-table {
@@ -11,7 +14,7 @@ body {
 .btn-delete {
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: transparent !important;
   font-size: 20px;
 }
 .btn-edit {

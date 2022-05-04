@@ -1,0 +1,88 @@
+section {
+  padding: 30px 0;
+  border-bottom: 3px solid #efeef5;
+  .section-title {
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  h2 {
+    transition: all 0.15 linear;
+  }
+  h3 {
+    width: 96%;
+    color: #111;
+    font-size: 13px;
+    padding-left: 2%;
+    font-weight: normal;
+    margin: 6px 0 0;
+    transition: all 0.15s linear;
+  }
+  img {
+    width: 96%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  button {
+    border: none;
+    padding: 5px 15px;
+    transition: all 0.12s linear;
+    &:hover {
+      color: #fff;
+      background-color: #f7d800;
+    }
+  }
+  .slide-item {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      h3,
+      h2 {
+        color: #45c3d2;
+      }
+    }
+  }
+  .slick-slider {
+    height: 220px;
+    // margin-right: -10px;
+  }
+  .slick-slide {
+    height: inherit;
+  }
+  .slick-prev,
+  .slick-next {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px 20px;
+    z-index: 10;
+    color: #959595 !important;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+  .slick-prev:hover,
+  .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    color: white;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 45px;
+    opacity: 1;
+  }
+  .slick-disabled {
+    display: none !important;
+  }
+}
